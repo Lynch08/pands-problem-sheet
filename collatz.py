@@ -1,18 +1,17 @@
+#Programme to input a number, if even divide by 2 if odd multiply by 3 and add 1
+#Author: Enda Lynch
+
+inNum = int(input("Please enter a number: "))   #input your number
+numbers = []                                    #name your list
+numbers.append(inNum)                           #append list with input number
 
 
-
-inNum = int(input("Please enter a number: "))
-numbers = []
-numbers.append(inNum)
-
-
-while inNum != 1:
-    if (inNum % 2) == 0:
-       numbers.append(inNum / 2)
-       inNum = inNum / 2
-    else:
-        numbers.append(inNum * 3 + 1)
-        inNum = inNum * 3 + 1
+while inNum != 1:                               #start loop - as long as the input number is not 1 keep going
+    if (inNum % 2) == 0:                        #define first parameter (is the number odd or even?)
+       inNum = (inNum / 2)                      #if even divide by 2
+       numbers.append(int(inNum))               # add to list
+    else:                           
+        inNum = (inNum * 3 + 1)                 #if odd multiply by 3 and add 1
+        numbers.append(int(inNum))              #add to list
         
-  
-print numbers.append(inNum)
+print (numbers)                                 #print full list when loop reaches 
