@@ -1,4 +1,5 @@
 #Programme to input a number, if even divide by 2 if odd multiply by 3 and add 1
+#Finsh when value is 1
 #Author: Enda Lynch
 
 inNum = int(input("Please enter a number: "))   #input your number
