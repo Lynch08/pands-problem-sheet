@@ -13,7 +13,7 @@ a = input("Number to get square root of:" )
 def sqrt(number, iterations = 100):
     a = float(number) # number to get square root of
     for i in range(1, iterations): # iteration number
-        number = 0.5 * (number + a / number) # √ number ≈ .5*(a/number + number)	  
+        number = 0.5 * (a / number + number) # √ number ≈ .5*(a/number + number)	  
     return round((number), 1)
 
 print ("Square number of", a, "is approx:", (sqrt(float(a))))
