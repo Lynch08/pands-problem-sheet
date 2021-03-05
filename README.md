@@ -1,5 +1,5 @@
 # pands-problem-sheet - Introduction
-Problem Sheet for Programming and Scripting 2021
+# Problem Sheet for Programming and Scripting 2021
 
 # Task 1
 ## BMI.py calculates a persons Body Mass Index using the inputs of height in cm and weight in Kg
@@ -62,24 +62,26 @@ Problem Sheet for Programming and Scripting 2021
 ###### Credit: Sweigart, A. (2005). Automate the boring stuff with python. In Decision Support Systems. Pages 61 - 77
 
 # Task 6
-## es.py Programme to count the amount of " e's " in a text file - (using moby-dick.txt) from argument in command line
+## es.py 
+## Programme to count the amount of " e's " in a text file - (using moby-dick.txt) from argument in command line
 
-## Code
-
-'''import sys
+## Code:
+```py
+import sys
 filename = sys.argv[1]
 
-def readLetter(filename, letter):              
+def readLetter(filename, letter):               
     with open (filename) as f:                  
         txt = f.read()                         
         count = 0                               
         for lett in txt:                       
             if lett == letter:
                 count += 1                      
-        return count                           
+        return count                            
 
-print(readLetter(filename, 'e')) '''                
-
+print(readLetter(filename, 'e'))                
+```
+## Explaining the code:
 ###### Import sys to read argument from command line
 ###### Create function to read file
 ###### Open and Read file
