@@ -65,8 +65,8 @@ Problem Sheet for Programming and Scripting 2021
 ## es.py Programme to count the amount of " e's " in a text file - (using moby-dick.txt) from argument in command line
 
 ## Code
-'''
-import sys
+
+'''import sys
 filename = sys.argv[1]
 
 def readLetter(filename, letter):              
@@ -78,8 +78,8 @@ def readLetter(filename, letter):
                 count += 1                      
         return count                           
 
-print(readLetter(filename, 'e'))                
-'''
+print(readLetter(filename, 'e')) '''                
+
 ###### Import sys to read argument from command line
 ###### Create function to read file
 ###### Open and Read file
