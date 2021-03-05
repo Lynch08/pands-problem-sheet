@@ -1,4 +1,4 @@
-# pands-problem-sheet
+## pands-problem-sheet - Introduction
 Problem Sheet for Programming and Scripting 2021
 
 # BMI.py calculates a persons Body Mass Index using the inputs of height in cm and weight in Kg
@@ -7,7 +7,7 @@ Calculate the BMI using weight/height (meters squared)
 Round to two decimal places so output will be clean
 Display BMI using print function
 
-Refrences 
+## Refrences 
 Credit: https://www.w3resource.com/python-exercises/python-basic-exercise-66.php
 Credit: https://www.includehelp.com/python/bmi-body-mass-index-calculator.aspx
 Credit: https://www.w3schools.com/python/ref_func_round.asp
@@ -16,7 +16,7 @@ Credit: https://www.w3schools.com/python/ref_func_round.asp
 Input string
 Reversestring and output every second letter
 
-Refrences
+## Refrences
 Credit: https://www.w3schools.com/python/gloss_python_string_slice.asp
 Credit: Picture in Course Header
 
@@ -26,7 +26,7 @@ Use datetime to "get" .today and .weekday to return the day of the week in numer
 0-6 is Mon-Sun
 Tell if it is a weekend or weekday
 
-Refrences 
+## Refrences 
 Credit: https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python
 Credit: https://www.w3schools.com/python/python_conditions.asp
 
@@ -38,7 +38,7 @@ If odd multiply by 3 and add 1
 Append number to list every time
 Print full list when loop reaches end(1)
 
-Refrences 
+## Refrences 
 Credit: https://www.w3schools.com/python/python_while_loops.asp
 Credit: Sweigart, A. (2005). Automate the boring stuff with python. In Decision Support Systems. Pages 45 - 50
 
@@ -48,7 +48,10 @@ Create function to loop through a set amount of iterations of newtons method - â
 Round to 1 decimal place
 Output aprox square root(float)
 
-Refrences 
+newt = input("Number to get square root of:" )
+
+
+## Refrences 
 Credit: https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d
 Credit: https://www.youtube.com/watch?v=WsQQvHm4lSw - Understand Calculas
 Credit: https://www.homeschoolmath.net/teaching/square-root-algorithm.php
@@ -65,6 +68,7 @@ Add 1 to count every time designated character is found
 Print final count
 Use '.\TxtFiles\moby-dick.txt' in command line to return count - textfiles are stored in seperate folder
 
+## Refrences 
 Credit: https://stackoverflow.com/questions/14360389/getting-file-path-from-command-line-argument-in-python/47324233
 Credit: https://realpython.com/python-command-line-arguments/
 Credit:https://www.pythontutorial.net/python-basics/python-read-text-file/
