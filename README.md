@@ -63,6 +63,23 @@ Problem Sheet for Programming and Scripting 2021
 
 # Task 6
 ## es.py Programme to count the amount of " e's " in a text file - (using moby-dick.txt) from argument in command line
+
+## Code
+.......
+import sys
+filename = sys.argv[1]
+
+def readLetter(filename, letter):               #create function to read file
+    with open (filename) as f:                  # open file
+        txt = f.read()                         #read file
+        count = 0                               #count begins at:0
+        for lett in txt:                       #loop for char
+            if lett == letter:
+                count += 1                      #+1 every time char is found
+        return count                            #return number of characters
+
+print(readLetter(filename, 'e'))                # use '
+......
 ###### Import sys to read argument from command line
 ###### Create function to read file
 ###### Open and Read file
