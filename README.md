@@ -64,3 +64,11 @@ Loop for designated character
 Add 1 to count every time designated character is found
 Print final count
 Use '.\TxtFiles\moby-dick.txt' in command line to return count - textfiles are stored in seperate folder
+
+Credit: https://stackoverflow.com/questions/14360389/getting-file-path-from-command-line-argument-in-python/47324233
+Credit: https://realpython.com/python-command-line-arguments/
+Credit:https://www.pythontutorial.net/python-basics/python-read-text-file/
+Credit:https://www.geeksforgeeks.org/reading-writing-text-files-python/
+Credit:https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
+Credit: http://bioinf.gen.tcd.ie/pol/moby.dick.txt
+
