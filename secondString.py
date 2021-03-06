@@ -1,4 +1,4 @@
-#Task week 3
+#Task Week 3
 #Author: Enda Lynch
 #REF: Picture in Course Header :)
 #REF: https://www.w3schools.com/python/gloss_python_string_slice.asp

@@ -2,7 +2,19 @@
 # Problem Sheet for Programming and Scripting 2021
 
 # Task 1
-## BMI.py calculates a persons Body Mass Index using the inputs of height in cm and weight in Kg
+## BMI.py 
+### Calculates a persons Body Mass Index using the inputs of height in cm and weight in Kg
+
+## Code:
+```py
+Weight = float (input('Enter Weight in kg: '))   
+Height = float (input('Enter height in cm: '))                                      
+Height2 = (float(Height/100)**2)                        
+BMI = round((Weight/Height2), 2)                        
+print ('Your BMI is: {}' .format (BMI))
+```
+
+## Explaining the code:
 ###### Assign weight and heights as floating points - this is becase even if you enter the weight and height as integers there is a good chance they will become decimals after the Calculation   
 ###### Calculate the BMI using weight/height (meters squared)
 ###### Round to two decimal places so output will be clean
@@ -15,18 +27,44 @@
 
 # Task 2
 ## secondstring.py 
+### Write a program that takes asks a user to input a string and outputs every second letter in reverse order
+
+## Code:
+```py
+string = input('Please enter a sentance:')
+print(string [::-2])
+```
+
+## Explaining the code:
 ###### Input string
-###### Reversestring and output every second letter
+###### Reversestring and output every second letter using slicing
 
 ## Refrences
 ###### Credit: https://www.w3schools.com/python/gloss_python_string_slice.asp
 ###### Credit: Picture in Course Header
 
 # Task 3
-## Weekday.py tells the user if it is a weekday or the weekend
-###### Import datetime
-###### Use datetime to "get" .today and .weekday to return the day of the week in numerical form
-###### 0-6 is Mon-Sun
+## Weekday.py 
+### Tells the user if it is a weekday or the weekend
+
+## Code:
+```py
+import datetime
+
+daynum = datetime.datetime.today().weekday()
+
+if daynum < 4:                                          # 0-3 is Mon-Thurs
+    print ("Yes, unfortunately today is a weekday")
+elif daynum == 4:                                       # 4 is Fri
+    print('still a weekday - but its Friday - weekend is coming :)')
+else:                                                   # 5 Sat, 6 Sun
+    print ("Weekend - YEAH!!")
+```
+## Explaining the code:
+###### Import datetime module
+###### Use datetime to "get" .today and .weekday to return the day of the week in numerical form, 0-6 is Mon-Sun
+###### Tell if it is a
+###### use if, elif and else to determine output
 ###### Tell if it is a weekend or weekday
 
 ## Refrences 
@@ -34,8 +72,28 @@
 ###### Credit: https://www.w3schools.com/python/python_conditions.asp
 
 # Task4
-## collatz.py Programme to input a number, if even divide by 2 if odd multiply by 3 and add 1. Finsh when value is 1
+## collatz.py
+### Programme to input a number, if even divide by 2 if odd multiply by 3 and add 1. Finsh when value is 1
+
+## Code:
+```py
+inNum = int(input("Please enter a number: "))   
+numbers = []                                    
+numbers.append(inNum)                          
+
+while inNum != 1:                               
+    if (inNum % 2) == 0:                        
+       inNum = (inNum / 2)                      
+       numbers.append(int(inNum))              
+    else:                           
+        inNum = (inNum * 3 + 1)                
+        numbers.append(int(inNum))              
+        
+print (numbers) 
+```
+## Explaining the code:
 ###### Input your number
+###### Create empty list
 ###### Start loop - as long as the input number is not 1 keep going
 ###### If even divide by 2
 ###### If odd multiply by 3 and add 1
@@ -47,7 +105,23 @@
 ###### Credit: Sweigart, A. (2005). Automate the boring stuff with python. In Decision Support Systems. Pages 45 - 50
 
 # Task 5
-## Squareroot.py is a programme so when you input a number it will return the square root using Newtons method
+## Squareroot.py 
+### A programme so when you input a number it will return the square root using Newtons method
+
+## Code:
+```py
+newt = input("Number to get square root of:" )
+
+def sqrt(number, iterations = 100):
+    newt = float(number) 
+    for i in range(1, iterations): 
+        number = 0.5 * (newt / number + number)
+    return round((number), 1)
+
+print ("Square number of", newt, "is approx:", (sqrt(float(newt))))
+
+```
+## Explaining the code:
 ###### Input number
 ###### Create function to loop through a set amount of iterations of newtons method - √ number ≈ .5*(a/number + number)) using the input number(changed to float) 
 ###### Round to 1 decimal place
