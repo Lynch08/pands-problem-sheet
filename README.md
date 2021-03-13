@@ -208,6 +208,7 @@ plt.show() #plt.savfig() when required
 ###### Use plt.xlabel and plt.ylabel to label x-axis and y-axis and format font
 ###### Generate plotted image using plt.show() and save using plt.savfig() when finished
 
+![plotTask Wk08](https://user-images.githubusercontent.com/77644253/111052116-2e104380-8450-11eb-9cb9-b9c0c106692b.PNG)
 
 ## Refrences 
 ###### Credit: https://realpython.com/how-to-use-numpy-arange/
