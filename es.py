@@ -19,4 +19,4 @@ def readLetter(filename, letter):               #create function to read file
                 count += 1                      #+1 every time char is found
         return count                            #return number of characters
 
-print(readLetter(filename, 'e'))                # use '.\TxtFiles\moby-dick.txt' in command line to return count
+print(readLetter(filename, 'e'))                # use 'python es.py .\TxtFiles\moby-dick.txt' in command line to return count
