@@ -30,6 +30,6 @@ plt.xlabel('x-axis', fontweight = 'bold', fontsize = 12)
 plt.ylabel('y-axis', fontweight = 'bold', fontsize = 12)
 plt.legend()
 #show plot
-#plt.show()
+plt.show()
 #save plot
-plt.savefig('plotTask - Wk8.png')
+#plt.savefig('plotTask - Wk8.png')
