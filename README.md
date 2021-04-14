@@ -104,10 +104,11 @@ print (numbers)
 ###### Credit: Sweigart, A. (2005). Automate the boring stuff with python. In Decision Support Systems. Pages 45 - 50
 
 # Task 5 (Wk6)
-## Squareroot.py 
-### A programme so when you input a number it will return the square root using Newtons method
+## squareroot.py and squareroot2.py
+### A programme so when you input a number it will return the square root using Newtons method using a function
+##### Note: I added a second way of doing this task that that would loop to precision as per feedback - and added error handling
 
-## Code:
+## Code for loop to set amount of iterations:
 ```py
 newt = input("Number to get square root of:" )
 
@@ -127,6 +128,38 @@ print ("Square number of", newt, "is approx:", (sqrt(float(newt))))
 ###### Round to 1 decimal place
 ###### Output aprox square root(float)
 
+## Code for loop to percision:
+```py
+
+num = 1.0
+babr = 1.0                                      
+num = input("Please enter a positive number: ")
+
+def sqrt(num):
+    try:
+        num = float(num)
+        if num >= 0.0:                                   
+            babr = num / 2                                   
+            while abs(babr - (num / babr)) > 0.01:       
+                babr = (babr + (num / babr)) * .5
+            babr = round(babr,1)                         
+
+            print("The square root of", num, "is approx.", babr)
+        else:
+            print(num, "is not a positive number.")      
+
+    except:
+        print(num, "is not a number.")                   
+
+sqrt(num)
+```
+## Explaining the code:
+###### Input number = num
+###### Create function 'sqrt' that uses error handling to ensure a positive float/integer has been input.
+###### Use while loop to iterate to precision to .01 - using the abs() function (absolute value)
+###### Round to 1 decimal place
+###### Output aprox square root(float) - if negative num or other characters are entered show error 
+
 ## Refrences 
 ###### Credit: https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d
 ###### Credit: https://www.youtube.com/watch?v=WsQQvHm4lSw - Understand Calculas
@@ -134,6 +167,9 @@ print ("Square number of", newt, "is approx:", (sqrt(float(newt))))
 ###### Credit: https://www.goeduhub.com/3398/python-program-to-find-the-square-root-number-newtons-method
 ###### Credit: https://www.school-for-champions.com/algebra/square_root_approx.htm#.YD102-j7TDe 
 ###### Credit: Sweigart, A. (2005). Automate the boring stuff with python. In Decision Support Systems. Pages 61 - 77
+###### Credit: https://blogs.sas.com/content/iml/2016/05/16/babylonian-square-roots.html
+###### Credit: Error handling video from Topic 9, Andrew Beatty.
+###### Credit: https://realpython.com/python-exceptions/ 
 
 # Task 6 (Wk7)
 ## es.py 
@@ -144,16 +180,20 @@ print ("Square number of", newt, "is approx:", (sqrt(float(newt))))
 import sys
 filename = sys.argv[1]
 
-def readLetter(filename, letter):               
-    with open (filename) as f:                  
-        txt = f.read()                         
-        count = 0                               
-        for lett in txt:                       
-            if lett == letter:
-                count += 1                      
-        return count                            
+def readLetter(filename, letter):
+    try:                                            
+        with open (filename) as f:                  
+            txt = f.read()                          
+            count = 0                               
+            for lett in txt:                        
+                if lett == letter:
+                    count += 1                      
+            return count                            
+    except FileNotFoundError:                       
+        print ("That file (", filename, ") does not exist", sep='')
+                     
 
-print(readLetter(filename, 'e'))                
+print(readLetter(filename, 'e'))                               
 ```
 ## Explaining the code:
 ###### Import sys to read argument from command line
@@ -162,6 +202,7 @@ print(readLetter(filename, 'e'))
 ###### Use 'For' Loop to add +1 to count every time designated character is found (count needs to be returned every time)
 ###### Print final count
 ###### Use '.\TxtFiles\moby-dick.txt' in command line to return count - textfiles are stored in seperate folder
+###### Added error handeling in the case that the file entered to the commandline does not exist
 
 ## Refrences 
 ###### Credit: https://stackoverflow.com/questions/14360389/getting-file-path-from-command-line-argument-in-python/47324233
@@ -170,6 +211,8 @@ print(readLetter(filename, 'e'))
 ###### Credit:https://www.geeksforgeeks.org/reading-writing-text-files-python/
 ###### Credit:https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
 ###### Credit: http://bioinf.gen.tcd.ie/pol/moby.dick.txt
+###### Credit: Error handling video from Topic 9, Andrew Beatty.
+###### Credit: https://realpython.com/python-exceptions/ 
 
 # Task 7 (Wk8)
 ## plotTask.py 
