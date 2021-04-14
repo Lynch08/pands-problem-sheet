@@ -3,7 +3,7 @@
 #REF https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d
 #REF https://www.youtube.com/watch?v=WsQQvHm4lSw - Understand Calculas
 #REF https://www.homeschoolmath.net/teaching/square-root-algorithm.php
-#REF https://www.goeduhub.com/3398/python-program-to-find-the-square-root-number-newtons-method
+#REF https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
 #REF https://www.school-for-champions.com/algebra/square_root_approx.htm#.YD102-j7TDe 
 #REF Automate the Boring Stuff - Chapter 3 Functions
 

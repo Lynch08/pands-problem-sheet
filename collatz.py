@@ -3,6 +3,8 @@
 #Author: Enda Lynch
 #REF: https://www.w3schools.com/python/python_while_loops.asp
 #REF: Sweigart, A. (2005). Automate the boring stuff with python. In Decision Support Systems. Pages 45 - 50
+#REF: https://realpython.com/python-while-loop/ (last accessed 14/04/2021)
+#REF: https://realpython.com/python-append/
 
 inNum = int(input("Please enter a number: "))   #input your number
 numbers = []                                    #name your list

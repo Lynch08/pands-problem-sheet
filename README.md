@@ -1,5 +1,12 @@
-# pands-problem-sheet - Introduction
+# Pands-Problem-Sheet 
+### Introduction
+This respository contains my solutions to the Problem Set 2021 for the module Programming and Scripting, part of the Data Analytics course at GMIT.
+I am a novice at programming, however it is becomeing more of a requirement in my professional life that I at least learn to do some simple automation and be a little stronger at data analysis and visual representation using computing tools more powerful than excel. Python being an introductory module in this data analyitics course was a major factor in me choosing GMITs programme.
+I will say, as frustrating as some of these tasks were at times, the satisfaction in seeing my code work at the end was always a good incentive and motivator to come back for more.
 # Problem Sheet for Programming and Scripting 2021
+##### Requirements to run this code
+An application/tool that will allow you to run Python3 (This code was written and tested using Visual Studio Code).
+You could also run on a tool like cmder or idle.
 
 # Task 1 (Wk2)
 ## BMI.py 
@@ -11,7 +18,7 @@ Weight = float (input('Enter Weight in kg: '))
 Height = float (input('Enter height in cm: '))                                      
 Height2 = (float(Height/100)**2)                        
 BMI = round((Weight/Height2), 2)                        
-print ('Your BMI is: {}' .format (BMI))
+print ('Your BMI is: {}\nPlease do not put too much stock in BMI' .format (BMI))
 ```
 
 ## Explaining the code:
@@ -21,9 +28,9 @@ print ('Your BMI is: {}' .format (BMI))
 ###### Display BMI using print function
 
 ## Refrences 
-###### Credit: https://www.w3resource.com/python-exercises/python-basic-exercise-66.php
-###### Credit: https://www.includehelp.com/python/bmi-body-mass-index-calculator.aspx
-###### Credit: https://www.w3schools.com/python/ref_func_round.asp
+###### Credit: https://www.w3resource.com/python-exercises/python-basic-exercise-66.php (last accessed 14/04/2021)
+###### Credit: https://www.includehelp.com/python/bmi-body-mass-index-calculator.aspx (last accessed 14/04/2021)
+###### Credit: https://www.w3schools.com/python/ref_func_round.asp (last accessed 14/04/2021)
 
 # Task 2 (Wk3)
 ## secondstring.py 
@@ -37,10 +44,10 @@ print(string [::-2])
 
 ## Explaining the code:
 ###### Input string
-###### Reversestring and output every second letter using slicing
+###### Reverse string and output every second letter using slicing
 
 ## Refrences
-###### Credit: https://www.w3schools.com/python/gloss_python_string_slice.asp
+###### Credit: https://www.w3schools.com/python/gloss_python_string_slice.asp (last accessed 14/04/2021)
 ###### Credit: Picture in Course Header :)
 
 # Task 3 (Wk4)
@@ -67,8 +74,9 @@ else:
 ###### Tell if it is a weekend or weekday
 
 ## Refrences 
-###### Credit: https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python
-###### Credit: https://www.w3schools.com/python/python_conditions.asp
+###### Credit: https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python (last accessed 14/04/2021)
+###### Credit: https://www.w3schools.com/python/python_conditions.asp (last accessed 14/04/2021)
+###### Credit: https://realpython.com/python-conditional-statements/ (last accessed 14/04/2021)
 
 # Task4 (Wk5)
 ## collatz.py
@@ -100,7 +108,9 @@ print (numbers)
 ###### Print full list when loop reaches end(1)
 
 ## Refrences 
-###### Credit: https://www.w3schools.com/python/python_while_loops.asp
+###### Credit: https://www.w3schools.com/python/python_while_loops.asp (last accessed 14/04/2021)
+###### Credit: https://realpython.com/python-while-loop/ (last accessed 14/04/2021)
+###### Credit: https://realpython.com/python-append/ (last accessed 14/04/2021)
 ###### Credit: Sweigart, A. (2005). Automate the boring stuff with python. In Decision Support Systems. Pages 45 - 50
 
 # Task 5 (Wk6)
@@ -161,15 +171,15 @@ sqrt(num)
 ###### Output aprox square root(float) - if negative num or other characters are entered show error 
 
 ## Refrences 
-###### Credit: https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d
-###### Credit: https://www.youtube.com/watch?v=WsQQvHm4lSw - Understand Calculas
-###### Credit: https://www.homeschoolmath.net/teaching/square-root-algorithm.php
-###### Credit: https://www.goeduhub.com/3398/python-program-to-find-the-square-root-number-newtons-method
-###### Credit: https://www.school-for-champions.com/algebra/square_root_approx.htm#.YD102-j7TDe 
+###### Credit: https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d (last accessed 14/04/2021)
+###### Credit: https://www.youtube.com/watch?v=WsQQvHm4lSw - Understand Calculas (last accessed 14/04/2021)
+###### Credit: https://www.homeschoolmath.net/teaching/square-root-algorithm.php (last accessed 14/04/2021)
+###### Credit: https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/  (last accessed 14/04/2021)
+###### Credit: https://www.school-for-champions.com/algebra/square_root_approx.htm#.YD102-j7TDe  (last accessed 14/04/2021)
 ###### Credit: Sweigart, A. (2005). Automate the boring stuff with python. In Decision Support Systems. Pages 61 - 77
-###### Credit: https://blogs.sas.com/content/iml/2016/05/16/babylonian-square-roots.html
+###### Credit: https://blogs.sas.com/content/iml/2016/05/16/babylonian-square-roots.html (last accessed 14/04/2021)
 ###### Credit: Error handling video from Topic 9, Andrew Beatty.
-###### Credit: https://realpython.com/python-exceptions/ 
+###### Credit: https://realpython.com/python-exceptions/  (last accessed 14/04/2021)
 
 # Task 6 (Wk7)
 ## es.py 
@@ -205,14 +215,14 @@ print(readLetter(filename, 'e'))
 ###### Added error handeling in the case that the file entered to the commandline does not exist
 
 ## Refrences 
-###### Credit: https://stackoverflow.com/questions/14360389/getting-file-path-from-command-line-argument-in-python/47324233
-###### Credit: https://realpython.com/python-command-line-arguments/
-###### Credit:https://www.pythontutorial.net/python-basics/python-read-text-file/
-###### Credit:https://www.geeksforgeeks.org/reading-writing-text-files-python/
-###### Credit:https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
-###### Credit: http://bioinf.gen.tcd.ie/pol/moby.dick.txt
+###### Credit: https://stackoverflow.com/questions/14360389/getting-file-path-from-command-line-argument-in-python/47324233 (last accessed 14/04/2021)
+###### Credit: https://realpython.com/python-command-line-arguments/ (last accessed 14/04/2021)
+###### Credit:https://www.pythontutorial.net/python-basics/python-read-text-file/ (last accessed 14/04/2021)
+###### Credit:https://www.geeksforgeeks.org/reading-writing-text-files-python/ (last accessed 14/04/2021)
+###### Credit:https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/ (last accessed 14/04/2021)
+###### Credit: http://bioinf.gen.tcd.ie/pol/moby.dick.txt (last accessed 14/04/2021)
 ###### Credit: Error handling video from Topic 9, Andrew Beatty.
-###### Credit: https://realpython.com/python-exceptions/ 
+###### Credit: https://realpython.com/python-exceptions/ (last accessed 14/04/2021)
 
 # Task 7 (Wk8)
 ## plotTask.py 
@@ -254,7 +264,7 @@ plt.show() #plt.savfig() when required
 ![plotTask Wk08](https://user-images.githubusercontent.com/77644253/111052116-2e104380-8450-11eb-9cb9-b9c0c106692b.PNG)
 
 ## Refrences 
-###### Credit: https://realpython.com/how-to-use-numpy-arange/
-###### Credit: https://stackoverflow.com/questions/14088687/how-to-change-plot-background-color
-###### Credit: https://stackoverflow.com/questions/18962063/matplotlib-setting-title-bold-while-using-times-new-roman
-###### Credit: https://www.programcreek.com/python/example/4890/matplotlib.rcParams
+###### Credit: https://realpython.com/how-to-use-numpy-arange/ (last accessed 14/04/2021)
+###### Credit: https://stackoverflow.com/questions/14088687/how-to-change-plot-background-color (last accessed 14/04/2021)
+###### Credit: https://stackoverflow.com/questions/18962063/matplotlib-setting-title-bold-while-using-times-new-roman (last accessed 14/04/2021)
+###### Credit: https://www.programcreek.com/python/example/4890/matplotlib.rcParams (last accessed 14/04/2021)
