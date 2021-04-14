@@ -24,14 +24,14 @@ def sqrt(num):
         if num >= 0.0:                                   # If 'num' is an positive number
             babr = num / 2                               # Set first approximation of root to half of 'num'     
             while abs(babr - (num / babr)) > 0.01:       # Loop until the difference between 'babr' and 'num' divided by 'babr' gives a value less than 0.01
-                babr = (babr + (num / babr)) * .5         #
+                babr = (babr + (num / babr)) * .5        # √ number ≈ .5*(newt/number + number)
             babr = round(babr,1)                         # Round babr to one decimal place
 
             print("The square root of", num, "is approx.", babr)
         else:
             print(num, "is not a positive number.")      # Otherwise prints a VALUE error message if 'num' is not a positive number
 
-    except:
-        print(num, "is not a number.")                   # Prints a TYPE exception error if 'num' not a number type variable
+    except ValueError:
+        print(num, "is not a number.")                   # Prints a ValueError exception error if characters other then numbers are input
 
 sqrt(num)
