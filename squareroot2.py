@@ -23,7 +23,7 @@ def sqrt(num):
         num = float(num)
         if num >= 0.0:                                   # If 'num' is an positive number
             babr = num / 2                               # Set first approximation of root to half of 'num'     
-            while abs(babr - (num / babr)) > 0.01:       # Loop until the difference between 'babr' and 'num' divided by 'babr' gives a value less than 0.01
+            while abs(babr - (num / babr)) > 0.01:       # Loop until the difference between 'babr' and 'num' divided by 'babr' gives a value less than 0.01 using the abs() function (absolute value - distance from 0)
                 babr = (babr + (num / babr)) * .5        # √ number ≈ .5*(newt/number + number)
             babr = round(babr,1)                         # Round babr to one decimal place
 
@@ -34,4 +34,4 @@ def sqrt(num):
     except ValueError:
         print(num, "is not a number.")                   # Prints a ValueError exception error if characters other then numbers are input
 
-sqrt(num)
+sqrt(num)                                                # Call function

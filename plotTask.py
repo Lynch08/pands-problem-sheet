@@ -7,7 +7,7 @@
 import numpy as np 
 import matplotlib.pyplot as plt 
 
-x = np.arange(0, 5, 1)  #The numpy arange() function takes four parameters that includes start, stop, step, and dtype and returns evenly spaced values within a given interval
+x = np.arange(0, 5, 1)      #The numpy arange() function takes four parameters that includes start, stop, step, and dtype and returns evenly spaced values within a given interval
 
 #generate plotpoints for x and y axis
 y1 = x

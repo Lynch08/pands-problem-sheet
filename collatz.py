@@ -19,4 +19,4 @@ while inNum != 1:                               #start loop - as long as the inp
         inNum = (inNum * 3 + 1)                 #if odd multiply by 3 and add 1
         numbers.append(int(inNum))              #add to list
         
-print (numbers)                                 #print full list when loop reaches end(1)
+print (numbers)                                 #print full list when loop reaches end

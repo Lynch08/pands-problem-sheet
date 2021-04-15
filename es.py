@@ -26,4 +26,4 @@ def readLetter(filename, letter):
         print ("That file (", filename, ") does not exist", sep='')
                      
 
-print(readLetter(filename, 'e'))                # use 'python es.py .\TxtFiles\moby-dick.txt' in command line to return count
+print(readLetter(filename, 'e'))                    # use 'python es.py .\TxtFiles\moby-dick.txt' in command line to return count

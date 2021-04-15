@@ -166,7 +166,7 @@ sqrt(num)
 ## Explaining the code:
 ###### Input number = num
 ###### Create function 'sqrt' that uses error handling to ensure a positive float/integer has been input.
-###### Use while loop to iterate to precision to .01 - using the abs() function (absolute value)
+###### Use while loop to iterate to precision to .01 - using the abs() function (absolute value - distance from 0)
 ###### Round to 1 decimal place
 ###### Output aprox square root(float) - if negative num or other characters are entered show error 
 

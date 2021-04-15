@@ -1,8 +1,9 @@
-#Task Week 3
+#Task Week 3 - Input a string that prints it out in reverse returning every second letter
 #Author: Enda Lynch
 #REF: Picture in Course Header :)
 #REF: https://www.w3schools.com/python/gloss_python_string_slice.asp
 
 
 string = input('Please enter a sentance:')      #input
+
 print(string [::-2])                            #reversestring and output every second letter
