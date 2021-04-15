@@ -43,8 +43,9 @@ print(string [::-2])
 ```
 
 ## Explaining the code:
-###### Input string
+###### Input string: The quick brown fox jumps over the lazy dog.
 ###### Reverse string and output every second letter using slicing
+###### Output String: .o zletrv pu o wr cu h
 
 ## Refrences
 ###### Credit: https://www.w3schools.com/python/gloss_python_string_slice.asp (last accessed 14/04/2021)
